@@ -19,7 +19,7 @@ const data = [
         price: 125,
         coverImg: "wedding-photography.png",
         stats: {
-            rating: 5.0,
+            rating: 4.6,
             reviewCount: 30
         },
         location: "Online",
@@ -36,6 +36,44 @@ const data = [
             reviewCount: 2
         },
         location: "Norway",
+        openSpots: 3,
+    },
+    {
+        id: 4,
+        title: "Scuba Diving",
+        description: "Discover the astonishing great barrier and swim with turtles(Suit provided)",
+        price: 130,
+        coverImg: "diving.png",
+        stats: {
+            rating: 5.0,
+            reviewCount: 8
+        },
+        location: "Australia",
+        openSpots: 0,
+    },
+    {
+        id: 3,
+        title: "Couple Hot Air Balloon",
+        description: "Observe portuguese landcapes from a unique perspective",
+        price: 99,
+        coverImg: "hot-air-balloon.png",
+        stats: {
+            rating: 4.9,
+            reviewCount: 6
+        },
+        location: "Portugal",
+        openSpots: 2,
+    },{
+        id: 3,
+        title: "Tolatongo Thermal Waters",
+        description: "a Mexican thermal paradise, located inside a canyon, with caves, waterfalls and a river of thermal waters.",
+        price: 50,
+        coverImg: "gruta-tolatongo.png",
+        stats: {
+            rating: 4.8,
+            reviewCount: 2
+        },
+        location: "Mexico",
         openSpots: 3,
     }
 ]
