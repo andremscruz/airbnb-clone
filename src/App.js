@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <section className="cards-list">
-          <CardComponent />
+        <CardComponent />
       </section>
     </div>
   )

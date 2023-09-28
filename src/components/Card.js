@@ -5,7 +5,7 @@ import "../Card.css"
 function Card(props) {
     return (
         <div className="card">
-            {props.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
+            {props.card.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
             <img alt = "card" src={`./images/${props.card.coverImg}`} className="card--image" />
             <div className="card--stats">
                 <img alt = "star" src={star} className="card--star" />
