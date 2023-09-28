@@ -13,6 +13,9 @@ body {
 .gray {
     color: #918E9B;
 }
+section {
+    padding: 20px;
+}
 .cards-list {
     display: flex;
     flex-wrap: nowrap;
