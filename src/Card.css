@@ -69,5 +69,5 @@ section {
     cursor: pointer;
 }
 .card--image:active{
-    border: 2px solid black;
+    border: 2px solid white;
 }
