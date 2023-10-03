@@ -2,15 +2,9 @@ import React from "react"
 import star from "../images/star.png"
 import "../Card.css"
 
-
-function handleClick(){
-    return(
-        console.log(<Card />)
-    )
-}
 function Card(props) {
     return (
-        <button className = "card--button" onClick={handleClick}>
+        <button className = "card--button" onClick={props.handleClick}>
             <div className="card">
             {props.card.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
             <img alt = "card" src={`./images/${props.card.coverImg}`} className="card--image" />
