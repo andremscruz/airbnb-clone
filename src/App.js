@@ -13,7 +13,6 @@ function App() {
       title: "" ,
       description: "" ,
       price: "" ,
-      coverImg: "" ,
       rating: "" ,
       reviewCount: "" , 
       location: "" ,
@@ -26,7 +25,6 @@ function App() {
     cardLocation,
     cardDescription,
     cardPrice,
-    cardImg,
     cardRating,
     cardReviewCount,
     cardOpenSpots){
@@ -37,7 +35,6 @@ function App() {
           title: cardTitle ,
           description: cardDescription  ,
           price: cardPrice ,
-          coverImg: cardImg ,
           rating: cardRating ,
           reviewCount: cardReviewCount , 
           location: cardLocation,
@@ -56,7 +53,6 @@ function App() {
           title = {description.title} 
           description = {description.description} 
           price = {description.price} 
-          coverImg = {description.coverImg} 
           rating = {description.rating} 
           reviewCount = {description.reviewCount}  
           location = {description.location} 

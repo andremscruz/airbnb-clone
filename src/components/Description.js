@@ -6,7 +6,6 @@ function Description(props){
     return(
         <div className="description--container">
             <nav className="nav">
-                
                 <div className="description--title">
                     {props.title}
                 </div>

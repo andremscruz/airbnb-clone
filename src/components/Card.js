@@ -12,7 +12,6 @@ function Card(props) {
                 props.card.location,
                 props.card.description,
                 props.card.price,
-                props.card.coverImg,
                 props.card.stats.rating,
                 props.card.stats.reviewCount,
                 props.card.openSpots)}>
