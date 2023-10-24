@@ -36,37 +36,32 @@ body {
     margin-left: auto;
     font-size: 25px;
 }
-.description--x{
+ 
+.description--x {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 40px;
-    top: 50px;
-    right: 150px;
-    align-items: center;
+    top: 30px;
+    right: 450px;
+    height: 25px;
     cursor: pointer;
-    /*
-    top: 50px; /* Adjust the top position as needed 
-    right: 450px; /* Adjust the right position as needed 
-    width: 40px;
-    transition: border 0.5s ease, background-color 0.5s ease, color 0.5s ease;
-    cursor: pointer;
-    text-align: center;*/
 }
-.x-line {
-    width: 3px;
-    height: 100%;
-    background-color: black;
-    position: relative;
-    transform: rotate(45deg);
-  }
-  
-  .x-line::before {
-    content: "";
-    width: 3px;
-    height: 100%;
-    background-color: black;
+    
+.description--x::before,
+.description--x::after {
+    content: '';
     position: absolute;
-    transform: rotate(90deg);
-  }
+    width: 6px;
+    height: 100%;
+    background-color: black;
+}
+    
+.description--x::before {
+     transform: rotate(45deg);
+}
+    
+.description--x::after {
+    transform: rotate(-45deg);
+}
+
+
+
 

@@ -13,8 +13,7 @@ function Description(props){
                     {props.location}
                 </div>
                 <div className="description--x" onClick={props.handleClick}>
-                    <div className="x-line"></div>
-                    <div className="x-line"></div>
+                    
                 </div>    
             </nav>
             <main>
