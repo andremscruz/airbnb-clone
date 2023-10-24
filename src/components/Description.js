@@ -25,7 +25,7 @@ function Description(props){
                     <p>{props.rating}</p>
                     <p className="grey">({props.reviewCount})</p>
                     <p className="description--price">Price: <span className="bold">From ${props.price}</span> / person</p>
-                    <p className="description--openSpots">{props.openSpots === 0 ? "Sold Out" : `Open Spots: ${props.openSpots}`}</p>              
+                    <p className="description--openSpots">{props.openSpots === 0 ? "New vacancies soon" : `Open Spots: ${props.openSpots}`}</p>              
             </footer>
         </div>
     )    
