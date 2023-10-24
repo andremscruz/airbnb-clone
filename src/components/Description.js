@@ -1,18 +1,32 @@
 import React from "react";
 import "../Description.css"
-import data from "../data";
 
 function Description(props){
-    const dataArray = data
     return(
-        <div>
-            <h1>{dataArray[0].title}</h1>
-            <h2>{dataArray[0].location}</h2>
-            <p>{dataArray[0].description}</p>
-            <h4>{dataArray[0].price}</h4>
-            <h5>{dataArray[0].stats.rating}</h5>
-            <h1 className="description--x" onClick={props.handleClick}>x</h1>
-       
+        <div className="description--container">
+            <nav className="nav">
+                
+                <div className="description--title">
+                    {props.title}
+                </div>
+                <div className="description--location">
+                    {props.location}
+                </div>
+                <div className="description--x" onClick={props.handleClick}>
+                    <div className="x-line"></div>
+                    <div className="x-line"></div>
+                </div>    
+            </nav>
+            <main>
+            
+                {props.description} 
+            </main>
+            <footer>
+                <p>{props.reviewCount}</p>
+                <p>{props.price}</p>
+                <p>{props.rating}</p>
+                <p>{props.openSpots}</p>
+            </footer>
         </div>
     )    
 }

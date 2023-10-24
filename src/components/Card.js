@@ -4,7 +4,18 @@ import "../Card.css"
 
 function Card(props) {
     return (
-        <button className = "card--button" onClick={props.handleClick}>
+        <button className = "card--button" 
+        onClick={() => 
+            props.handleClick(
+                props.card.id,
+                props.card.title,
+                props.card.location,
+                props.card.description,
+                props.card.price,
+                props.card.coverImg,
+                props.card.stats.rating,
+                props.card.stats.reviewCount,
+                props.card.openSpots)}>
             <div className="card">
             {props.card.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
             <img alt = "card" src={`./images/${props.card.coverImg}`} className="card--image" />

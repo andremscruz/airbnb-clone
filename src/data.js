@@ -52,7 +52,7 @@ const data = [
         openSpots: 0,
     },
     {
-        id: 3,
+        id: 5,
         title: "Couple Hot Air Balloon",
         description: "Observe portuguese landcapes from a unique perspective",
         price: 99,
@@ -64,7 +64,7 @@ const data = [
         location: "Portugal",
         openSpots: 2,
     },{
-        id: 3,
+        id: 6,
         title: "Tolatongo Thermal Waters",
         description: "a Mexican thermal paradise, located inside a canyon, with caves, waterfalls and a river of thermal waters.",
         price: 50,
