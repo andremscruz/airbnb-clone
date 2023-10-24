@@ -10,17 +10,20 @@ body {
     max-height: 450px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    border: 1px solid black;
+    border: 2px solid rgba(255, 90, 95, 1);
     border-radius: 25px;
 }
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(33, 34, 42, 1);
-    border-right: 1px solid rgba(33, 34, 42, 1);
-    border-left: 1px solid rgba(33, 34, 42, 1);
+    border-bottom: 2px solid rgba(255, 90, 95, 1);
+    border-right: 2px solid rgba(255, 90, 95, 1);
+    border-left: 2px solid rgba(255, 90, 95, 1);
     border-radius: 25px;
     padding: 10px;
 }
@@ -38,6 +41,30 @@ body {
     font-size: 25px;
     font-weight: bold;
 }
+.description--footer {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgba(255, 90, 95, 1);
+    border-right: 2px solid rgba(255, 90, 95, 1);
+    border-left: 2px solid rgba(255, 90, 95, 1);
+    border-radius: 25px;
+    padding: 10px;
+}
+.description--star{
+    margin-right: 5px;
+} 
+.description--price {
+    margin-left: 225px;
+}
+.description--openSpots {
+    margin-left: auto;
+}
+.grey{
+    color: grey;
+}
+.bold{
+    font-weight: bolder;
+}
  
 .description--x {
     position: absolute;
@@ -54,7 +81,7 @@ body {
     position: absolute;
     width: 6px;
     height: 100%;
-    background-color: rgb(109, 100, 100);
+    background-color: rgb(197, 60, 64);
 }
     
 .description--x::before {

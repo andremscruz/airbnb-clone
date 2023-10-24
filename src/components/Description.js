@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import star from "../images/star.png"
 import "../Description.css"
 
 function Description(props){
@@ -17,14 +18,14 @@ function Description(props){
                 </div>    
             </nav>
             <main>
-            
-                {props.description} 
+                <h1>{props.description} </h1>
             </main>
-            <footer>
-                <p>{props.reviewCount}</p>
-                <p>{props.price}</p>
-                <p>{props.rating}</p>
-                <p>{props.openSpots}</p>
+            <footer className="description--footer">
+                <img alt = "star" src={star} className="description--star" />
+                    <p>{props.rating}</p>
+                    <p className="grey">({props.reviewCount})</p>
+                    <p className="description--price">Price: <span className="bold">From ${props.price}</span> / person</p>
+                    <p className="description--openSpots">Open Spots: {props.openSpots}</p>              
             </footer>
         </div>
     )    

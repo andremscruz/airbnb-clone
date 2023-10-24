@@ -20,10 +20,10 @@ const data = [
         coverImg: "wedding-photography.png",
         stats: {
             rating: 4.6,
-            reviewCount: 30
+            reviewCount: 9
         },
         location: "Online",
-        openSpots: 27,
+        openSpots: 7,
     },
     {
         id: 3,
@@ -41,7 +41,7 @@ const data = [
     {
         id: 4,
         title: "Scuba Diving",
-        description: "Discover the astonishing great barrier and swim with turtles(Suit provided)",
+        description: "Discover the astonishing great barrier and swim with turtles. As the largest living structure on Earth, the Great Barrier Reef is one of the best scuba diving destinations in the world, offering a variety and abundance of marine life seldom found elsewhere. (Suit provided!)",
         price: 130,
         coverImg: "diving.png",
         stats: {
@@ -54,7 +54,7 @@ const data = [
     {
         id: 5,
         title: "Couple Hot Air Balloon",
-        description: "Observe portuguese landcapes from a unique perspective",
+        description: "Balloon rides in Portugal provide unique opportunities to Discover amazing landscapes from the silence of the sky. The landscapes, the birds and Portugal’s aesthetic impressions will stay in your mind for many years after.",
         price: 99,
         coverImg: "hot-air-balloon.png",
         stats: {
@@ -66,8 +66,8 @@ const data = [
     },{
         id: 6,
         title: "Tolatongo Thermal Waters",
-        description: "a Mexican thermal paradise, located inside a canyon, with caves, waterfalls and a river of thermal waters.",
-        price: 50,
+        description: "Come enjoy heated pools, two grottos with natural spring water, a cave with natural showers, a pristine turquoise river that runs through the canyon, and several waterfalls. ",
+        price: 150,
         coverImg: "gruta-tolatongo.png",
         stats: {
             rating: 4.8,
