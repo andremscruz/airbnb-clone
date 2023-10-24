@@ -31,10 +31,12 @@ body {
 .description--title{
     margin-right: auto;
     font-size: 25px;
+    font-weight: bolder;
 }
 .description--location{
     margin-left: auto;
     font-size: 25px;
+    font-weight: bold;
 }
  
 .description--x {
@@ -43,6 +45,7 @@ body {
     right: 220px;
     height: 25px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
     
 .description--x::before,
@@ -51,7 +54,7 @@ body {
     position: absolute;
     width: 6px;
     height: 100%;
-    background-color: black;
+    background-color: rgb(109, 100, 100);
 }
     
 .description--x::before {
@@ -61,7 +64,9 @@ body {
 .description--x::after {
     transform: rotate(-45deg);
 }
-
+.description--x:hover{
+    transform:scale(1.2);
+}
 
 
 
