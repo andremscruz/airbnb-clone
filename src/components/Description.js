@@ -4,7 +4,7 @@ import "../Description.css"
 
 function Description(props){
     return(
-        <div className="description--container">
+        <div className={props.darkMode ? "description--container--dark" : "description--container"}>
             <nav className="nav">
                 <div className="description--title">
                     {props.title}

@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+.container--dark{
+    background-color: #282D35;
+}
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -9,17 +11,38 @@ body {
 section {
     padding: 20px;
 }
+
 .hero {
     display: flex;
     flex-direction: column;
 }
+.hero--dark{
+    display: flex;
+    flex-direction: column;
+    background-color: #282D35;
+}
+
 .hero--photo {
     max-width: 400px;
     align-self: center;
 }
+.hero--dark .hero--photo{
+    max-width: 400px;
+    align-self: center;
+}
+
 .hero--header {
     margin-bottom: 16px;
 }
+.hero--dark .hero--header{
+    margin-bottom: 16px;
+    color: white;    
+}
+
 .hero--text {
     margin-top: 0;
+}
+.hero--dark .hero--text{
+    margin-top: 0;
+    color: white;
 }

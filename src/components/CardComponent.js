@@ -9,6 +9,7 @@ function CardComponent(props){
                 key={card.id}
                 card={card}
                 handleClick = {props.handleClick}
+                darkMode = {props.darkMode}
             />
         )
     )

@@ -4,7 +4,7 @@ import "../Card.css"
 
 function Card(props) {
     return (
-        <button className = "card--button" 
+        <button className = {props.darkMode ? "card--button--dark" : "card--button"}
         onClick={() => 
             props.handleClick(
                 props.card.id,

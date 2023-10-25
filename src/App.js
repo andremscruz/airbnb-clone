@@ -7,6 +7,7 @@ import CardComponent from "./components/CardComponent"
 
 function App() {  
   const [showDescription, setShowDescription] = useState(true);
+  const [darkMode, setDarkMode] = useState(false)
   const [description, setDescription] = useState(
     {
       id: "" ,
@@ -41,13 +42,17 @@ function App() {
           openSpots: cardOpenSpots ,
         })
   }
+
+  function toggleDarkMode(){
+    setDarkMode(prevState => !prevState)
+  }
   
   return (
-    <div>
-       <Navbar />
-      {showDescription && <Hero />}
+    <div className ={darkMode ? "container--dark" : ""} >
+       <Navbar darkMode = {darkMode} toggleDarkMode = {toggleDarkMode}/>
+      {showDescription && <Hero darkMode = {darkMode}/>}
       <section className="cards-list">
-        {showDescription ? <CardComponent handleClick = {handleClick}/> :
+        {showDescription ? <CardComponent handleClick = {handleClick} darkMode = {darkMode}/> :
         <Description
           id = {description.id}
           title = {description.title} 
@@ -58,6 +63,7 @@ function App() {
           location = {description.location} 
           openSpots = {description.openSpots}           
           handleClick = {handleClick}
+          darkMode = {darkMode}
           />}
       </section>
     </div>

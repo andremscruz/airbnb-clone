@@ -1,18 +1,82 @@
 * {
     box-sizing: border-box;
 }
-
+.container--dark{
+    background-color: #282D35;
+}
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 nav {
     height: 70px;
     display: flex;
     padding: 20px 36px;
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
+nav.dark{
+    background-color: #21222A;
+}
+
 .nav--logo {
     max-width: 100px;
 }
+
+.toggler {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.toggler p {
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: rgb(114, 35, 37);
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgba(255, 90, 95, 1);
+    box-sizing: content-box;
+}
+nav.dark .toggler--slider {
+    border-color: rgb(255, 70, 77);
+    background-color: rgba(255, 90, 95, 1);
+}
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: rgba(255, 90, 95, 1);
+}
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+nav.dark .toggler--dark {
+    color: rgba(255, 90, 95, 1);
+}
+
+
 
