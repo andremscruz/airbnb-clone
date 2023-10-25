@@ -6,7 +6,7 @@ import CardComponent from "./components/CardComponent"
 
 
 function App() {  
-  const [showDescription, setShowDescription] = useState(true);
+  const [showDescription, setShowDescription] = useState(false);
   const [darkMode, setDarkMode] = useState(false)
   const [description, setDescription] = useState(
     {
@@ -50,9 +50,9 @@ function App() {
   return (
     <div className ={darkMode ? "container--dark" : ""} >
        <Navbar darkMode = {darkMode} toggleDarkMode = {toggleDarkMode}/>
-      <Hero darkMode = {darkMode} showDescription = {showDescription}/>
+      {!showDescription && <Hero darkMode = {darkMode} />}
       <section className="cards-list">
-        {showDescription ? <CardComponent handleClick = {handleClick} darkMode = {darkMode}/> :
+        {!showDescription ? <CardComponent handleClick = {handleClick} darkMode = {darkMode}/> :
         <Description
           id = {description.id}
           title = {description.title} 
