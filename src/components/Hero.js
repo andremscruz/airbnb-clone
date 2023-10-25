@@ -1,6 +1,5 @@
 import React from "react"
 import hero from "../images/photo-grid.png"
-import heroHalf from "../images/photo-grid-half.png"
 import "../Hero.css"
 
 function Hero(props) {
