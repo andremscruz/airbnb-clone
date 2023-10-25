@@ -50,7 +50,7 @@ function App() {
   return (
     <div className ={darkMode ? "container--dark" : ""} >
        <Navbar darkMode = {darkMode} toggleDarkMode = {toggleDarkMode}/>
-      {showDescription && <Hero darkMode = {darkMode}/>}
+      <Hero darkMode = {darkMode} showDescription = {showDescription}/>
       <section className="cards-list">
         {showDescription ? <CardComponent handleClick = {handleClick} darkMode = {darkMode}/> :
         <Description
