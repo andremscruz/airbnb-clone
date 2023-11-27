@@ -3,6 +3,10 @@ import star from "../images/star.png"
 import "../Card.css"
 
 function Card(props) {
+    const type = props.card.coverImage.contentType
+    console.log(type)
+    const img = props.card.coverImage.data.data.toString('base64')
+    console.log(img)
     return (
         <button className = {props.darkMode ? "card--button--dark" : "card--button"}
         onClick={() => 
@@ -17,7 +21,7 @@ function Card(props) {
                 props.card.openSpots)}>
             <div className="card">
             {props.card.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
-            <img alt = "card" src={`./images/${props.card.coverImg}`} className="card--image" />
+            <img alt = "card" src={`data:${type};base64,${img}`} className="card--image" />
             <div className="card--stats">
                 <img alt = "star" src={star} className="card--star" />
                 <span>{props.card.stats.rating}</span>
