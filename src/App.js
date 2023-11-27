@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Description from "./components/Description"
 import CardComponent from "./components/CardComponent"
-import experiences from "./service/experience"
 
 
 function App() {  
-  const [cards, setCards] = useState([])
   const [showDescription, setShowDescription] = useState(false);
   const [darkMode, setDarkMode] = useState(false)
   const [description, setDescription] = useState(
@@ -21,12 +19,6 @@ function App() {
       location: "" ,
       openSpots: "" 
     })
-
-  useEffect(() => {
-    experiences.getAll().then(exp => setCards(exp))
-  },[])
-
-
 
   function handleClick(
     cardId,
@@ -60,7 +52,7 @@ function App() {
        <Navbar darkMode = {darkMode} toggleDarkMode = {toggleDarkMode}/>
       {!showDescription && <Hero darkMode = {darkMode} />}
       <section className="cards-list">
-        {!showDescription ? <CardComponent cards = {cards} handleClick = {handleClick} darkMode = {darkMode}/> :
+        {!showDescription ? <CardComponent handleClick = {handleClick} darkMode = {darkMode}/> :
         <Description
           id = {description.id}
           title = {description.title} 
